@@ -12,9 +12,19 @@ namespace SistemaDeCadastrosC_
 {
     public partial class Form1 : Form
     {
+        List<Pessoa> pessoas;
         public Form1()
         {
             InitializeComponent();
+
+            pessoas = new List<Pessoa>();
+
+            ComboEc.Items.Add("Solteiro");
+            ComboEc.Items.Add("Casado");
+            ComboEc.Items.Add("Viúvo");
+            ComboEc.Items.Add("Divorciado");
+
+            ComboEc.SelectedIndex = 0;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -26,15 +36,35 @@ namespace SistemaDeCadastrosC_
         {
 
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
+        }
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void btnExcluir_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Listar()
+        {
+            lista.Items.Clear();
+
+            foreach (Pessoa p in pessoas) 
+            {
+                lista.Items.Add(pessoas);
+
+            }
         }
     }
 }

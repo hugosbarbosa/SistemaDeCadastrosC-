@@ -45,7 +45,7 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lista = new System.Windows.Forms.ListBox();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,23 +223,25 @@
             this.btnLimpar.TabIndex = 13;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // button1
+            // btnExcluir
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(861, 579);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 29);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(861, 579);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(197, 29);
+            this.btnExcluir.TabIndex = 14;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 750);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.btnCadastrar);
@@ -283,7 +285,7 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
 
