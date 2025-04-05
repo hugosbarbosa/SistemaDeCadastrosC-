@@ -42,7 +42,15 @@ namespace SistemaDeCadastrosC_
         }
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            int index = -1;
 
+            foreach (Pessoa p in pessoas) 
+            {
+                if (p.Nome == txtnome.Text)
+                {
+                    index = pessoas.IndexOf(p);
+                }
+            }
         }
 
 
